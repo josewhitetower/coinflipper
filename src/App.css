@@ -27,7 +27,28 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes flipHeads {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(1800deg);
+  }
+}
+
+.Coin img.flipping {
+  animation: flipHeads 3s;
+}
+
+
+.Coin img {
+  height: 200px;
+  width: 200px;
 }
